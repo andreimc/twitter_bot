@@ -38,3 +38,44 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+
+gem 'bootstrap-sass'
+gem 'devise'
+gem 'pg'
+gem 'simple_form'
+gem 'slim-rails'
+
+group :development do
+  gem 'better_errors'
+  gem 'foreman'
+  gem 'haml2slim'
+  gem 'html2haml'
+  gem 'hub', :require=>nil
+  gem 'quiet_assets'
+  gem 'rails_apps_pages'
+  gem 'rails_apps_testing'
+  gem 'rails_layout'
+  gem 'spring-commands-rspec'
+end
+
+group :development, :test do
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'pry-rails'
+  gem 'pry-rescue'
+  gem 'rspec-rails'
+  gem 'thin'
+end
+
+group :production do
+  gem 'puma'
+  gem 'rails_12factor'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'launchy'
+  gem 'selenium-webdriver'
+end
+
